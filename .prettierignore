@@ -1,0 +1,44 @@
+# Tool configurations
+.editorconfig
+.eslintignore
+.npmrc
+.prettierignore
+package.json
+yarn.lock
+.eslintcache
+.gitmodules
+.vs/
+.env
+.buckconfig
+.watchmanconfig
+.git-blame-ignore-revs
+.idea
+
+# Fonts
+*.eot
+*.ttf
+*.woff
+
+# Images
+*.gif
+*.ico
+*.jpg
+*.png
+*.svg
+
+# Miscellaneous
+*.hb
+*.ps1
+*.sh
+*.txt
+.cache
+.DS_Store
+.gitignore
+.gitattributes
+*.resx
+*.xlsx
+.env.*
+.yarnrc
+
+# Mock output
+dist/

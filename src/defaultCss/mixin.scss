@@ -1,0 +1,111 @@
+/*
+* MIXINS
+* =====================================================================
+*
+*/
+
+/* ====================================================================
+   =Alignment
+   ================================================================= */
+
+@mixin padding-start($val: 0) {
+    -rtl-reverse-padding-left: $val;
+}
+
+@mixin padding-end($val: 0) {
+    -rtl-reverse-padding-right: $val;
+}
+
+@mixin justify-content-end() {
+    -ltr-justify-content: flex-end;
+    -rtl-justify-content: flex-start;
+}
+
+@mixin justify-content-start() {
+    -ltr-justify-content: flex-start;
+    -rtl-justify-content: flex-end;
+}
+
+@mixin margin-start($val: 0) {
+    -rtl-reverse-margin-left: $val;
+}
+
+@mixin margin-end($val: 0) {
+    -rtl-reverse-margin-right: $val;
+}
+
+@mixin position-start($val: 0) {
+    -rtl-reverse-left: $val;
+}
+
+@mixin position-end($val: 0) {
+    -rtl-reverse-right: $val;
+}
+
+@mixin float-start() {
+    -rtl-reverse-float: left;
+}
+
+@mixin float-end() {
+    -rtl-reverse-float: right;
+}
+
+/* ====================================================================
+   =Borders
+   ================================================================= */
+
+@mixin border-radius-start($val: 0) {
+    -rtl-reverse-border-top-left-radius: $val;
+    -rtl-reverse-border-bottom-left-radius: $val;
+}
+
+@mixin border-radius-end($val: 0) {
+    -rtl-reverse-border-top-right-radius: $val;
+    -rtl-reverse-border-bottom-right-radius: $val;
+}
+
+/* ====================================================================
+   =Transforms
+   ================================================================= */
+
+@mixin rotate($degrees) {
+    transform: rotate($degrees);
+}
+
+@mixin translateX($x) {
+    -ltr-transform: translateX($x);
+    -rtl-transform: translateX(-$x);
+}
+
+@mixin translateY($y) {
+    transform: translateY($y);
+}
+
+@mixin translateZ($z) {
+    transform: translateZ($z);
+}
+
+@mixin translate3d($x, $y, $z) {
+    -ltr-transform: translate3d($x, $y, $z);
+    -rtl-transform: translate3d(-$x, $y, $z);
+}
+
+/**
+ * 1. See https://github.com/twitter/bootstrap/issues/4885
+ * 2. See https://github.com/twitter/bootstrap/issues/5319
+ */
+@mixin skew($x, $y) {
+    transform: skew($x, $y);
+    -webkit-backface-visibility: hidden; // 2
+}
+
+/**
+ * Prevent browsers from flickering when using CSS 3D transforms.
+ *  - Default value is `visible`, but can be changed to `hidden
+ *  - See git pull https://github.com/dannykeane/bootstrap.git
+ *    backface-visibility for examples
+ */
+@mixin backface-visibility($visibility) {
+    -webkit-backface-visibility: $visibility;
+    backface-visibility: $visibility;
+}

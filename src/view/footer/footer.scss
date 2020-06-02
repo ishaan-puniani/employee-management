@@ -1,0 +1,37 @@
+.footer {
+    display: flex;
+    background: $background-app;
+    padding: 5px $gutter-medium-default 0;
+    justify-content: space-between;
+    border-top: 1px solid $border-color-default;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 16px - 16px);
+
+    &__copyright {
+        display: flex;
+        margin: 0;
+        padding: 0 1.25rem 0 0;
+        font-size: 1rem;
+        font-weight: 400;
+        justify-content: flex-start;
+        color: $text-color-secondary;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 0 0 0.75rem;
+        margin: 0;
+    }
+
+    &__menu-link {
+        margin: 0 0 0 1.25rem;
+        padding: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        color: $text-color-secondary;
+        position: relative;
+        display: inline-block;
+    }
+}

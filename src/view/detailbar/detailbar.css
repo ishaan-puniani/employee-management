@@ -1,0 +1,47 @@
+.top-bar {
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.top-bar .detail-bar {
+    flex-basis: 80%;
+}
+.top-bar .detail-bar ul {
+    list-style: none;
+    margin-left: 3rem;
+    margin-top: 0.4rem;
+}
+.top-bar .detail-bar ul li {
+    display: inline-block;
+    margin: 0.5rem 1.1rem;
+}
+.top-bar .detail-bar ul li p {
+    color: rgb(255, 255, 230);
+    font-weight: 700;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.top-bar .detail-bar ul li p span {
+    color: #fff;
+    font-weight: lighter;
+}
+
+.top-bar .top-btn {
+    flex: auto;
+    flex-basis: 20%;
+    align-items: center;
+    background-color: #09b5e0;
+}
+.top-bar .top-btn button {
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    background-color: #09b5e0;
+    border: none;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}

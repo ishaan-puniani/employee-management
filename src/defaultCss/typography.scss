@@ -1,0 +1,85 @@
+/* ====================================================================
+    =Fonts
+================================================================= */
+
+$app-meta-color: #666;
+
+$background-app: #fff;
+
+// Font-sizes
+$font-size-tiny: 11px;
+$font-size-small: 12px;
+$font-size-medium: 14px; // default
+$font-size-large: 16px;
+$font-size-huge: 20px;
+$font-size-gigantic: 26px;
+$font-size-insane: 40px;
+
+// formsize
+$form-size-lg: 4rem;
+
+// Line height
+$line-height-tiny: 2rem;
+$line-height-small: 2rem;
+$line-height-medium: 2rem; // default
+$line-height-large: 3rem;
+$line-height-huge: 3rem;
+$line-height-gigantic: 4rem;
+$line-height-insane: 6rem;
+
+/* ====================================================================
+    =Border Radius
+    ================================================================= */
+
+$border-radius-action: 12px;
+$border-radius-card: 6px;
+$border-radius-dropdown: 4px;
+$border-radius-input: 4px;
+
+/* ====================================================================
+    =Gutter
+    ================================================================= */
+
+$gutter-small-default: 1rem;
+$gutter-medium-default: 1rem;
+$gutter-medium-wide: 2rem;
+$gutter-large-default: 2rem;
+$gutter-large-wide: 3rem;
+
+// Global Colors
+$color-primary: #39d;
+$color-primary-hover: #4ae;
+$color-error: #ffa100;
+$color-success: #00a800;
+
+// Text Colors
+$text-color-default: #111;
+$text-color-secondary: #888;
+$text-color-tertiary: $color-primary-hover;
+
+// Borders
+$border-color-default: #e6e6e8;
+$border-color-highlight: $color-primary-hover;
+$border-color-highlight-inverted: #3e3e3e;
+$border-color-dimmed: #fcfcfc;
+
+/* ====================================================================
+    =Breakpoints
+    ================================================================= */
+
+$breakpoint-narrow: '(max-width: 499px)';
+$breakpoint-regular: '(min-width: 500px) and (max-width: 768px)';
+$breakpoint-wide: '(min-width: 769px) and (max-width: 1439px)';
+$breakpoint-extra-wide: '(min-width: 1440px)';
+
+/* ====================================================================
+    =Gutter
+    ================================================================= */
+
+$gutter-small-default: 1rem;
+$gutter-medium-default: 1rem;
+$gutter-medium-wide: 2rem;
+$gutter-large-default: 2rem;
+$gutter-large-wide: 3rem;
+
+$max-width: 200rem + $gutter-medium-wide * 2;

@@ -1,0 +1,50 @@
+/*
+* Default CSS
+* =====================================================================
+*
+*/
+
+@import 'defaultCss/reset';
+@import 'defaultCss/typography';
+@import 'defaultCss/type';
+@import 'defaultCss/mixin';
+
+/*
+* Blocks
+* =====================================================================
+*
+*/
+
+@import 'blocks/radioButton/radioButton';
+@import 'blocks/tab/tab';
+@import 'blocks/form/form';
+@import 'blocks/button/button';
+
+/*
+* Modules
+* =====================================================================
+*
+*/
+
+@import 'modules/masthead/masthead';
+@import 'modules/home/home';
+@import 'modules/footer/footer';
+@import 'modules/home/introduction.scss';
+
+/*
+* App css
+* =====================================================================
+*
+*/
+.app {
+    display: flex;
+    flex-direction: column;
+}
+.app__content {
+    max-width: $max-width;
+    min-height: 4rem;
+    padding: 0.25rem $gutter-medium-default;
+    display: flex;
+    flex:1;
+    justify-content: center;
+}

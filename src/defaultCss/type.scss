@@ -1,0 +1,90 @@
+.t-insane {
+    font-size: $font-size-insane;
+    line-height: $line-height-insane;
+}
+
+.t-huge {
+    font-size: $font-size-huge;
+    line-height: $line-height-huge;
+}
+
+.t-large {
+    font-size: $font-size-large;
+    line-height: $line-height-large;
+}
+
+.t-medium {
+    font-size: $font-size-medium;
+    line-height: $line-height-medium;
+}
+
+.t-small {
+    font-size: $font-size-small;
+    line-height: $line-height-small;
+}
+
+.t-tiny {
+    font-size: $font-size-tiny;
+    line-height: $line-height-tiny;
+}
+
+.t-truncate {
+    max-width: 100%; // 1
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/**
+ * Horizontal text alignment
+ */
+.t-center {
+    text-align: center;
+}
+
+/**
+ * 1. IE10/11 don't support text-align: start|end, so just use RTL defaults.
+ */
+.t-start {
+    -ltr-text-align: left; // 1
+    -rtl-text-align: right; // 1
+    text-align: start;
+}
+
+.t-end {
+    -ltr-text-align: right; // 1
+    -rtl-text-align: left; // 1
+    text-align: end;
+}
+
+.t-bold,
+b,
+strong {
+    font-weight: bold;
+}
+
+.t-normal {
+    font-weight: normal;
+}
+
+.t-italic,
+.estimate {
+    font-style: italic;
+}
+
+.t-underline {
+    text-decoration: underline;
+}
+
+.t-nocase {
+    text-transform: none;
+}
+
+.t-upper {
+    text-transform: uppercase;
+}
+
+.t-lower {
+    text-transform: lowercase;
+}
